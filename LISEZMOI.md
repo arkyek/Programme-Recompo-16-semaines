@@ -2,6 +2,8 @@
 
 Une web app installable (PWA). Elle s'installe depuis Safari, fonctionne **hors ligne** et garde **toutes les données sur le téléphone**. Pas d'App Store, pas d'abonnement, pas de base de données.
 
+Toutes les fonctionnalités, avec des exemples : voir [README.md](README.md).
+
 ## 1. Mettre l'app en ligne une fois (gratuit, 5 min, depuis un PC)
 
 L'iPhone doit télécharger l'app une première fois depuis une adresse web. Avec **GitHub Pages** :
