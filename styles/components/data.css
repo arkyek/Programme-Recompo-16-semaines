@@ -1,0 +1,106 @@
+/* Graphiques, tableaux et listes (Progrès, Séance) */
+.chart svg {
+  width: 100%;
+  height: auto;
+  display: block
+}
+
+.chart .ax {
+  stroke: var(--line);
+  stroke-width: 1
+}
+
+.chart .ln {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2.2;
+  stroke-linejoin: round;
+  stroke-linecap: round
+}
+
+.chart .ln2 {
+  fill: none;
+  stroke: var(--fg2);
+  stroke-width: 1.2
+}
+
+.chart .ar {
+  fill: var(--accent-soft)
+}
+
+.chart .pt {
+  fill: var(--accent)
+}
+
+.chart text {
+  fill: var(--muted);
+  font-size: 10px;
+  font-family: var(--font)
+}
+
+.kv {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4px 12px;
+  font-size: 14px
+}
+
+.kv span:nth-child(even) {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  text-align: right
+}
+
+table.mini {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px
+}
+
+table.mini th,
+table.mini td {
+  padding: 6px 4px;
+  border-bottom: 1px solid var(--line);
+  text-align: right;
+  font-variant-numeric: tabular-nums
+}
+
+table.mini th:first-child,
+table.mini td:first-child {
+  text-align: left
+}
+
+table.mini th {
+  font-size: 11px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .04em
+}
+
+.tblwrap {
+  overflow-x: auto
+}
+
+.exrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+  background: none;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  width: 100%;
+  text-align: left
+}
+
+.exrow:last-child {
+  border-bottom: 0
+}
+
+.spark {
+  width: 90px;
+  height: 28px;
+  flex: none
+}

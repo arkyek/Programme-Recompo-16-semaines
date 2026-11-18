@@ -1,0 +1,298 @@
+/* Guide (contenu du programme) */
+.gnav {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: none
+}
+
+.gnav::-webkit-scrollbar {
+  display: none
+}
+
+.gnav button {
+  white-space: nowrap;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 13.5px;
+  font-weight: 600
+}
+
+.guide {
+  display: grid;
+  gap: 8px;
+  font-size: 15px
+}
+
+.guide section {
+  display: grid;
+  gap: 14px;
+  padding-block: 18px 6px;
+  scroll-margin-top: 90px
+}
+
+.guide .sechead {
+  display: grid;
+  gap: 4px;
+  border-top: 3px solid var(--fg);
+  padding-top: 10px
+}
+
+.guide .sechead h2 {
+  font-family: var(--display);
+  font-size: 24px;
+  text-transform: uppercase
+}
+
+.guide .eyebrow {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--accent);
+  letter-spacing: .08em
+}
+
+.guide h3 {
+  font-size: 18px
+}
+
+.guide h4 {
+  font-size: 16px;
+  margin: 0
+}
+
+.guide .prose {
+  display: grid;
+  gap: 10px
+}
+
+.guide ul,
+.guide ol {
+  margin: 0;
+  padding-left: 20px;
+  display: grid;
+  gap: 4px
+}
+
+.guide .grid2,
+.guide .grid3,
+.guide .phases {
+  display: grid;
+  gap: 12px
+}
+
+.guide .panel,
+.guide .phase {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px;
+  display: grid;
+  gap: 8px;
+  min-width: 0
+}
+
+.guide .phase h3 {
+  color: var(--accent)
+}
+
+.guide .phase .wk {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--muted)
+}
+
+.guide .phase dl {
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 3px 10px;
+  font-size: 14px
+}
+
+.guide .phase dt {
+  color: var(--muted)
+}
+
+.guide .phase dd {
+  margin: 0
+}
+
+.guide .note {
+  border-left: 4px solid var(--warn);
+  background: var(--warn-soft);
+  padding: 10px 12px;
+  border-radius: 0 8px 8px 0;
+  font-size: 14px
+}
+
+.guide .note.bad {
+  border-color: var(--bad);
+  background: var(--bad-soft)
+}
+
+.guide .note.ok {
+  border-color: var(--ok);
+  background: var(--ok-soft)
+}
+
+.guide .note.info {
+  border-color: var(--accent);
+  background: var(--accent-soft)
+}
+
+.guide .tbl {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface)
+}
+
+.guide table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 13.5px;
+  min-width: 520px
+}
+
+.guide th,
+.guide td {
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top
+}
+
+.guide th {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: var(--muted);
+  background: var(--sunk)
+}
+
+.guide td.n,
+.guide th.n {
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums
+}
+
+.guide tfoot td {
+  font-weight: 700;
+  background: var(--sunk)
+}
+
+.guide .pill {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 999px;
+  white-space: nowrap
+}
+
+.guide .p-ok {
+  background: var(--ok-soft);
+  color: var(--ok)
+}
+
+.guide .p-opt {
+  background: var(--warn-soft);
+  color: var(--warn)
+}
+
+.guide .p-no {
+  background: var(--bad-soft);
+  color: var(--bad)
+}
+
+.guide .p-add {
+  background: var(--accent-soft);
+  color: var(--accent)
+}
+
+.guide .weekwrap {
+  overflow-x: auto
+}
+
+.guide .week {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(110px, 1fr));
+  gap: 6px;
+  min-width: 800px
+}
+
+.guide .day {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 8px;
+  display: grid;
+  gap: 5px;
+  align-content: start;
+  font-size: 12.5px
+}
+
+.guide .day b {
+  font-size: 15px;
+  text-transform: uppercase
+}
+
+.guide .tag {
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 6px;
+  background: var(--sunk)
+}
+
+.guide .tag.lift {
+  background: var(--accent);
+  color: var(--accent-fg)
+}
+
+.guide .tag.cardio {
+  background: var(--accent-soft);
+  color: var(--accent)
+}
+
+.guide .tag.spa {
+  background: var(--warn-soft);
+  color: var(--warn)
+}
+
+.guide .tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap
+}
+
+.guide .tabs button {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--surface)
+}
+
+.guide .tabs button[aria-selected="true"] {
+  background: var(--fg);
+  color: var(--bg)
+}
+
+.guide .refs {
+  font-size: 13px;
+  color: var(--muted)
+}
+
+.guide .refs b {
+  color: var(--fg)
+}
+
+.guide .num {
+  font-family: var(--mono)
+}

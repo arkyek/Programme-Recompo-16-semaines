@@ -1,0 +1,10 @@
+{
+  "name": "recompo-16",
+  "private": true,
+  "description": "PWA hors ligne du programme de recomposition corporelle 16 semaines",
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "check": "node tools/check.js"
+  }
+}

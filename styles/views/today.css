@@ -1,0 +1,179 @@
+/* Cibles du jour */
+.targets {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px
+}
+
+.tg {
+  background: var(--sunk);
+  border-radius: 12px;
+  padding: 10px;
+  display: grid;
+  gap: 6px;
+  min-width: 0
+}
+
+.tg .lb {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 600
+}
+
+.tg .v {
+  font-size: 20px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums
+}
+
+.tg .v small {
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 500
+}
+
+.bar {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--line);
+  overflow: hidden
+}
+
+.bar i {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  border-radius: 3px
+}
+
+.tg .ctl {
+  display: flex;
+  gap: 6px
+}
+
+.tg .ctl button {
+  flex: 1;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 8px;
+  padding: 5px 0;
+  font-weight: 600;
+  font-size: 14px
+}
+
+.tg input {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 6px 8px;
+  background: var(--surface);
+  font-variant-numeric: tabular-nums
+}
+
+/* Timeline */
+.tl {
+  display: grid;
+  gap: 0
+}
+
+.tli {
+  display: grid;
+  grid-template-columns: 52px 30px 1fr;
+  gap: 0 8px;
+  align-items: start;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line)
+}
+
+.tli:last-child {
+  border-bottom: 0
+}
+
+.tli .t {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--muted);
+  padding-top: 3px
+}
+
+.ck {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  border: 2px solid var(--line);
+  background: var(--surface);
+  display: grid;
+  place-items: center;
+  padding: 0
+}
+
+.ck[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-fg)
+}
+
+.ck svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0
+}
+
+.ck[aria-pressed="true"] svg {
+  opacity: 1
+}
+
+.tli .bd {
+  display: grid;
+  gap: 4px;
+  min-width: 0
+}
+
+.tli .bd .tt {
+  font-weight: 650
+}
+
+.tli.done .tt {
+  color: var(--muted);
+  text-decoration: line-through
+}
+
+.tli .dt {
+  font-size: 14px;
+  color: var(--muted)
+}
+
+.tli .sup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px
+}
+
+.tli .sup span {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 6px;
+  background: var(--warn-soft);
+  color: var(--warn)
+}
+
+.tli details {
+  font-size: 13.5px
+}
+
+.tli summary {
+  color: var(--accent);
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none
+}
+
+.tli summary::-webkit-details-marker {
+  display: none
+}

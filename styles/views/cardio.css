@@ -1,0 +1,28 @@
+/* Grand minuteur cardio */
+.bigclock {
+  font-family: var(--mono);
+  font-size: 56px;
+  font-weight: 700;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  line-height: 1
+}
+
+.phasebox {
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 12px;
+  background: var(--sunk)
+}
+
+.phasebox.on {
+  background: var(--bad-soft);
+  color: var(--bad)
+}
+
+.phasebox.off {
+  background: var(--ok-soft);
+  color: var(--ok)
+}

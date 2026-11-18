@@ -1,0 +1,51 @@
+/* Minuteur de repos */
+.timer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: calc(var(--tabh) + env(safe-area-inset-bottom, 0px) + 4px);
+  z-index: 25;
+  display: flex;
+  justify-content: center;
+  padding: 0 max(12px, env(safe-area-inset-right, 0px)) 0 max(12px, env(safe-area-inset-left, 0px))
+}
+
+.timer .in {
+  max-width: 536px;
+  width: 100%;
+  background: var(--fg);
+  color: var(--bg);
+  border-radius: 14px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, .25)
+}
+
+.timer .big {
+  font-family: var(--mono);
+  font-size: 26px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums
+}
+
+.timer .lb {
+  flex: 1;
+  font-size: 13px;
+  min-width: 0
+}
+
+.timer button {
+  border: 0;
+  border-radius: 9px;
+  padding: 8px 10px;
+  font-weight: 700;
+  background: var(--bg);
+  color: var(--fg)
+}
+
+.timer.end .in {
+  background: var(--accent);
+  color: var(--accent-fg)
+}

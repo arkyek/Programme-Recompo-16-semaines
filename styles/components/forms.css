@@ -1,0 +1,25 @@
+/* Champs de formulaire */
+.field {
+  display: grid;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 600
+}
+
+.field input,
+.field select,
+.field textarea {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px;
+  background: var(--bg);
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%
+}
+
+.fgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px
+}

@@ -1,0 +1,54 @@
+/* Figures */
+svg .lim {
+  stroke: var(--fg);
+  stroke-width: 3.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none
+}
+
+svg .lim2 {
+  stroke: var(--fg2);
+  stroke-width: 3.6;
+  stroke-linecap: round;
+  fill: none
+}
+
+svg .head {
+  fill: var(--fg)
+}
+
+svg .gnd {
+  stroke: var(--line);
+  stroke-width: 1.5
+}
+
+svg .eqr {
+  fill: var(--eq)
+}
+
+svg .eql {
+  stroke: var(--eq);
+  stroke-linecap: round
+}
+
+svg .cab {
+  stroke: var(--muted);
+  stroke-width: 1;
+  stroke-dasharray: 3 2
+}
+
+svg .band {
+  stroke: var(--accent);
+  stroke-width: 2
+}
+
+svg .db {
+  fill: var(--accent)
+}
+
+svg .pad {
+  fill: var(--eq);
+  stroke: var(--muted);
+  stroke-width: .8
+}

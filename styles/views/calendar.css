@@ -1,0 +1,123 @@
+/* Calendrier */
+.wk {
+  display: grid;
+  gap: 6px
+}
+
+.wk .wh {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 13px
+}
+
+.wk .wh b {
+  font-size: 14px
+}
+
+.days7 {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px
+}
+
+.dc {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 9px;
+  padding: 5px 2px 6px;
+  display: grid;
+  justify-items: center;
+  gap: 2px;
+  min-width: 0;
+  position: relative
+}
+
+.dc .d {
+  font-size: 11px;
+  color: var(--muted)
+}
+
+.dc .n {
+  font-size: 15px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums
+}
+
+.dc .a {
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%
+}
+
+.dc.lift .a {
+  color: var(--lift)
+}
+
+.dc.cardio .a {
+  color: var(--cardio)
+}
+
+.dc.rest .a,
+.dc.active .a {
+  color: var(--rest)
+}
+
+.dc.lift {
+  background: var(--accent-soft);
+  border-color: transparent
+}
+
+.dc.cardio {
+  background: var(--cardio-soft);
+  border-color: transparent
+}
+
+.dc.today {
+  outline: 2px solid var(--fg);
+  outline-offset: -2px
+}
+
+.dc.done::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--ok)
+}
+
+.phase-h {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-top: 8px
+}
+
+.phase-h b {
+  font-family: var(--display);
+  font-size: 20px
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 12.5px;
+  color: var(--muted)
+}
+
+.legend i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  margin-right: 4px;
+  vertical-align: -1px
+}

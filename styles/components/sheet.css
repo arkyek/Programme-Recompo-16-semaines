@@ -1,0 +1,22 @@
+/* Feuille modale */
+.sheet {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background: rgba(0, 0, 0, .4);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center
+}
+
+.sheet .pn {
+  background: var(--surface);
+  width: 100%;
+  max-width: 560px;
+  border-radius: 18px 18px 0 0;
+  padding: 18px max(16px, env(safe-area-inset-right, 0px)) calc(18px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px));
+  display: grid;
+  gap: 12px;
+  max-height: 88vh;
+  overflow-y: auto
+}
