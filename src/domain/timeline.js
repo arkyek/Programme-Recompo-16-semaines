@@ -19,7 +19,7 @@ export function timeline(p) {
   const items = [];
   const add = o => items.push(o);
 
-  add({ k: 'wake', t: '08:30', title: 'Réveil', dt: 'Lumière du jour 10–20 min.' + ([0, 2, 4].includes(p.wd) ? ' Pesée à jeun après les toilettes, à noter ci-dessus.' : ''), tip: 'Même heure de lever chaque jour, week-end compris (± 30 min). C\'est la régularité qui protège la testostérone.' });
+  add({ k: 'wake', t: '08:30', title: 'Réveil', dt: 'Lumière du jour 10–20 min.' + ([0, 2, 4].includes(p.wd) ? ' Pesée à jeun après les toilettes, à noter ci-dessus.' : ''), tip: 'Même heure de lever chaque jour, week-end compris (± 30 min). C\'est la régularité qui fait la qualité du sommeil.' });
   add({
     k: 'bk', t: '09:00', title: 'Petit-déjeuner', meal: true, kcal: lift ? 736 : 667, prot: lift ? 52 : 61,
     dt: lift ? '70 g flocons d\'avoine + 250 ml lait sans lactose + 30 g whey (après cuisson) + 1 banane · 2 œufs' : '70 g flocons d\'avoine + 250 ml lait sans lactose + 30 g whey (après cuisson) · 2 œufs · pas de banane',
@@ -47,7 +47,7 @@ export function timeline(p) {
   if (!lift) add({ k: 'pre', t: '16:45', title: 'Collation', meal: true, kcal: 200, prot: 4, dt: '1 pomme · 20 g amandes', sup: ['Café optionnel (dernier de la journée, avant 17 h)'] });
   add({ k: 'dinner', t: '20:00', title: 'Dîner', meal: true, kcal: 620, prot: 39, dt: '150 g saumon (ou 180 g poulet, 160 g bœuf 5 %, 200 g cabillaud, 3 œufs + 150 g blancs) · 250 g pommes de terre · 250 g légumes · 5 g huile d\'olive', tip: 'Saumon 2 fois par semaine maximum, varier les autres jours.' });
   add({ k: 'snack', t: '23:30', title: 'Collation du soir', meal: true, kcal: 140, prot: 17, dt: '150 g skyr nature + 100 g fruits rouges', tip: 'Protéines lentes pour la nuit. Le skyr contient peu de lactose.' });
-  add({ k: 'night', t: '00:00', title: 'Routine du coucher', dt: 'Écrans coupés, pas de vape, chambre noire à 17–19 °C.', sup: ['Magnésium 2 gél. (250 mg)', ...(ashwagandha ? ['Ashwagandha 600 mg'] : [])], tip: ashwagandha ? 'Ashwagandha : semaines 1 à 8, puis 4 semaines de pause.' : 'Pause ashwagandha (S9–S12). Si besoin : rhodiola + safran le matin, jamais avec l\'ashwagandha.' });
+  add({ k: 'night', t: '00:00', title: 'Routine du coucher', dt: 'Écrans coupés, chambre noire à 17–19 °C.', sup: ['Magnésium 2 gél. (250 mg)', ...(ashwagandha ? ['Ashwagandha 600 mg'] : [])], tip: ashwagandha ? 'Ashwagandha : semaines 1 à 8, puis 4 semaines de pause.' : 'Pause ashwagandha (S9–S12). Si besoin : rhodiola + safran le matin, jamais avec l\'ashwagandha.' });
   add({ k: 'sleep', t: '01:00', title: 'Coucher', dt: 'Objectif 7 h 30 de sommeil.' });
 
   return items.sort((a, b) => chronoKey(a.t) < chronoKey(b.t) ? -1 : 1);

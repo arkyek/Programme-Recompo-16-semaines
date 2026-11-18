@@ -10,7 +10,7 @@ import { exerciseCues } from '../ui/components/exercise-info.js';
 const SECTIONS = [
   ['vue', 'Vue d\'ensemble'], ['avant', 'Avant de commencer'], ['plan', 'Plan'], ['cardio', 'Cardio'],
   ['genou', 'Genou'], ['recup', 'Spa'], ['nutrition', 'Nutrition'], ['complements', 'Compléments'],
-  ['testo', 'Testo & sommeil'], ['suivi', 'Suivi'], ['exos', 'Exercices'], ['sources', 'Sources'],
+  ['sommeil', 'Sommeil'], ['suivi', 'Suivi'], ['exos', 'Exercices'], ['sources', 'Sources'],
 ];
 
 function exercisesSection() {

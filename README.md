@@ -191,7 +191,7 @@ Avec l'horaire **midi** (Réglages), la collation passe à 11:30, la séance à 
 
 ### Conseil du jour et note
 
-- Un **conseil du jour** tourne parmi 28 rappels (sommeil, protéines, RIR, genou, caféine…).
+- Un **conseil du jour** tourne parmi 27 rappels (sommeil, protéines, RIR, genou, caféine…).
 - **Note du jour** : texte libre, enregistré automatiquement. Exemple : *« Genou gauche raide au réveil, ça passe après l'échauffement. Faim vers 17 h. »*
 
 ---
@@ -475,7 +475,7 @@ Tout le programme, lisible hors ligne, avec un sommaire défilant en haut :
 | Spa & récupération | Sauna, froid, hammam : quand et comment |
 | Nutrition | Calories, macronutriments, repas, lactose |
 | Compléments | Ce qui est utile, ce qui ne l'est pas |
-| Testostérone & sommeil | Leviers naturels |
+| Sommeil & récupération | Leviers (sommeil, alcool, nicotine, sédentarité) et routine du soir |
 | Suivi & ajustements | Quoi mesurer et comment réagir |
 | Exercices | Les 30 fiches illustrées : schéma, muscles, consignes, note genou, démos vidéo |
 | Sources | Références scientifiques |

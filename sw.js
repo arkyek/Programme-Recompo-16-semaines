@@ -2,7 +2,7 @@
    À chaque mise à jour : changer VERSION.
    À chaque fichier ajouté, renommé ou supprimé : mettre à jour la liste ci-dessous
    (un seul fichier manquant fait échouer l'installation hors ligne). */
-const VERSION = 'recompo-v2';
+const VERSION = 'recompo-v3';
 
 const SHELL = ['./', './index.html', './manifest.webmanifest',
   './assets/icons/icon-180.png', './assets/icons/icon-192.png', './assets/icons/icon-512.png'];
